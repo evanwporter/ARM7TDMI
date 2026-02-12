@@ -2,7 +2,7 @@
 import os
 from struct import unpack_from, pack
 
-TARGET_INDEX = 32977
+TARGET_INDEX = 34555
 TARGET_FILE = r".\tests\GameboyAdvanceCPUTests\v1\arm_ldr_str_register_offset.json.bin"
 
 
