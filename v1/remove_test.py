@@ -2,7 +2,7 @@
 import os
 from struct import unpack_from, pack
 
-TARGET_INDEX = 34555
+TARGET_INDEX = 46176
 TARGET_FILE = r".\tests\GameboyAdvanceCPUTests\v1\arm_ldr_str_register_offset.json.bin"
 
 
@@ -62,12 +62,12 @@ def remove_test_from_file(filename, index_to_remove):
     for raw in tests_raw:
         new_content += raw
 
-    # Backup original
-    backup_name = filename + ".backup"
-    if not os.path.exists(backup_name):
-        print(f"Creating backup: {backup_name}")
-        with open(backup_name, "wb") as f:
-            f.write(content)
+    # # Backup original
+    # backup_name = filename + ".backup"
+    # if not os.path.exists(backup_name):
+    #     print(f"Creating backup: {backup_name}")
+    #     with open(backup_name, "wb") as f:
+    #         f.write(content)
 
     # Overwrite original
     with open(filename, "wb") as f:
